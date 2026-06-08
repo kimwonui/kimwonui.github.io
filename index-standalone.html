@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wonui Kim — Marketer, Content Builder, Marine Corps Veteran</title>
+<meta name="description" content="Wonui Kim — Economics major at Penn State and ROK Marine Corps veteran. I turn market insight into content, research, and campaigns that ship." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<meta name="ext-resource-dependency" content="ic-logo.png" data-resource-id="icLogo" />
+<meta name="ext-resource-dependency" content="wonui-business-card.jpeg" data-resource-id="spoanyCard" />
+<meta name="ext-resource-dependency" content="keyglo-icon.png" data-resource-id="keyglIcon" />
+<meta name="ext-resource-dependency" content="rok-marine-corps-seal.png" data-resource-id="rokSeal" />
+<meta name="ext-resource-dependency" content="Wonui_Kim_Resume.pdf" data-resource-id="resumePdf" />
+<meta name="ext-resource-dependency" content="image-slot.js" data-resource-id="imageSlot" />
+
+<template id="__bundler_thumbnail" data-bg-color="#ffffff">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#ffffff"/>
+    <circle cx="600" cy="200" r="80" fill="#3b82f6" opacity="0.1"/>
+    <text x="600" y="400" font-family="Arial, sans-serif" font-size="72" font-weight="900" text-anchor="middle" fill="#0b0b0c">WK</text>
+    <text x="600" y="500" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#76767d">Wonui Kim</text>
+  </svg>
+</template>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <span class="mark">WK</span>
+      Wonui Kim
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#what">What I Do</a></li>
+        <li><a href="#work">Work</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <!-- PLACEHOLDER: paste your résumé PDF link in href -->
+      <a class="btn btn-dark" href="#resumeModal" id="resumeBtn">Résumé
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <span class="hero-watermark" aria-hidden="true">W</span>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">
+        <span class="dash">—</span> Economics &rsquo;26 <span class="sep">/</span> Penn State <span class="sep">/</span> ROK Marines <span class="sep">/</span> Entrepreneur <span class="sep">/</span> Product Manager <span class="sep">/</span> Developer
+      </p>
+      <h1 class="display hero-display">I turn market insight into <span class="blue">work that ships.</span></h1>
+      <p class="lede hero-sub">Economics major and Marine Corps veteran — content, market research, and campaigns I actually finish.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">See my work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#about">Learn more
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <image-slot id="headshot" shape="rounded" radius="18" placeholder="Drop your headshot" style="width: 100%; height: 680px"></image-slot>
+      <span class="photo-tag">Wonui Kim</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<div class="stats">
+  <div class="stat"><div class="num">~30</div><div class="lbl">People I lead at IC</div></div>
+  <div class="stat"><div class="num">20K+</div><div class="lbl">Total content views</div></div>
+  <div class="stat"><div class="num">5</div><div class="lbl">Competitor gyms researched</div></div>
+  <div class="stat"><div class="num">18 mo</div><div class="lbl">ROK Marine Corps</div></div>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section-pad" id="about">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="h-sec">About</h2>
+      <span class="idx">01 / Profile</span>
+    </div>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>Born in South Korea, I attended Storm King School in the U.S. during high school and went on to Penn State for my Economics degree. Marketer and content builder who likes the part most people skip — <span class="key">finishing.</span></p>
+        <p>I study Economics at Penn State, lead IC (a ~30-person creative studio making video, design, and writing for Gen Z), and run overseas market research for SpoAny, a major Korean fitness brand. I&rsquo;ve shipped my own iOS app, KeyGlo.</p>
+        <p>Before all that I served 18 months in the ROK Marine Corps as a Sergeant, where I learned to own the details and finish what I start.</p>
+      </div>
+      <aside class="about-side">
+        <span class="mono-label">At a glance</span>
+        <dl>
+          <div class="row"><dt>Based in</dt><dd>State College, PA</dd></div>
+          <div class="row"><dt>Studying</dt><dd>B.A. Economics</dd></div>
+          <div class="row"><dt>Graduating</dt><dd>Fall 2026</dd></div>
+          <div class="row"><dt>Languages</dt><dd>Korean / English</dd></div>
+          <div class="row"><dt>Service</dt><dd>Sergeant, ROK Marines</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT I DO ===================== -->
+<section class="section-pad" id="what" style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="h-sec">What I do</h2>
+      <span class="idx">02 / Focus</span>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <span class="num">(01)</span>
+        <h3>Business Team Leadership</h3>
+        <p>Leading teams from the ground up — building culture, driving execution, and turning ideas into scalable operations across IC and beyond.</p>
+      </article>
+      <article class="card">
+        <span class="num">(02)</span>
+        <h3>Full-Stack App Development</h3>
+        <p>Solo building and shipping complete products — from design and code to launch. Built KeyGlo, a Korean–English translation iOS keyboard, end-to-end.</p>
+      </article>
+      <article class="card">
+        <span class="num">(03)</span>
+        <h3>Business &amp; Marketing Strategy</h3>
+        <p>Market research, competitor analysis, and go-to-market planning that turns data into actionable business decisions and customer growth.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section class="section-pad" id="work">
+  <div class="container">
+    <div class="sec-head">
+      <h2 class="h-sec">Experience &amp; projects</h2>
+      <span class="idx">03 / Work</span>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="role">Founder &amp; Lead</div>
+        <div class="date">Dec 2025 — Present</div>
+        <img src="" alt="IC Logo" style="height: 120px; width: auto; margin-top: 32px; opacity: 0.9;" id="icLogoImg" />
+      </div>
+      <div class="exp-body">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 8px;">
+          <h3 style="margin: 0;">IC (Infinite Challenge)</h3>
+        </div>
+        <p class="org-sub">Creative venture studio · ~30 people</p>
+        <ul>
+          <li>Lead about 30 people across video, design, and writing, growing IC from a project crew into a formal studio.</li>
+          <li>Finished 20+ challenges and 5 projects, reaching 20,000+ total views and 300+ Instagram followers.</li>
+          <li>Organized and filmed a real-people skydiving event, documented end-to-end on a dedicated website portfolio.</li>
+        </ul>
+        <div class="exp-tags"><span class="tag">Content</span><span class="tag">Team Lead</span><span class="tag">Production</span></div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="role">Overseas Manager · Freelance</div>
+        <div class="date">May 2025 — Present</div>
+        <img src="" alt="SpoAny Business Card" style="width: 100%; max-width: 240px; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" id="spoanyCardImg" />
+      </div>
+      <div class="exp-body">
+        <h3>SpoAny</h3>
+        <p class="org-sub">Major Korean fitness brand · Remote</p>
+        <ul>
+          <li>Researched 5 competitor gyms within a 2km radius — pricing, promotions, facilities, crowd density, and demographics.</li>
+          <li>Compared the Korean and U.S. fitness markets to flag what drives new sign-ups and member retention.</li>
+          <li>Supported communication between the Korean headquarters and the U.S. side.</li>
+        </ul>
+        <div class="exp-tags"><span class="tag">Research</span><span class="tag">Competitor Analysis</span><span class="tag">Fitness</span></div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="role">Solo Builder</div>
+        <div class="date">2025 — Present</div>
+        <img src="" alt="KeyGlo Logo" style="height: 160px; width: auto; margin-top: 32px; border-radius: 24px;" id="keyglIconImg" />
+      </div>
+      <div class="exp-body">
+        <h3>KeyGlo &amp; independent products</h3>
+        <p class="org-sub">Korean–English translation iOS keyboard</p>
+        <ul>
+          <li>Built and shipped KeyGlo solo — planning, design, and development of a Korean–English translation iOS keyboard.</li>
+          <li>Iterating with 7 beta testers to refine the experience.</li>
+          <li>Prototyped student community and event concepts in Figma.</li>
+        </ul>
+        <div class="exp-tags"><span class="tag">iOS</span><span class="tag">Product</span><span class="tag">Figma</span></div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="role">Sergeant · Honorable Discharge</div>
+        <div class="date">Mar 2023 — Sep 2024</div>
+        <img src="" alt="ROK Marine Corps Seal" style="height: 140px; width: auto; margin-top: 32px;" id="rokSealImg" />
+      </div>
+      <div class="exp-body">
+        <h3>ROK Marine Corps</h3>
+        <p class="org-sub">2nd Marine Division · Reconnaissance &amp; infantry</p>
+        <ul>
+          <li>Served 18 months in reconnaissance and infantry roles; honorably discharged at the rank of Sergeant.</li>
+          <li>Executed assigned duties accurately under deadlines and pressure in a high-responsibility, team-based environment.</li>
+        </ul>
+        <div class="exp-tags"><span class="tag">Leadership</span><span class="tag">Discipline</span><span class="tag">Execution</span></div>
+      </div>
+    </div>
+
+    <!-- Skills strip -->
+    <div style="margin-top:48px;">
+      <span class="mono-label" style="display:block;margin-bottom:16px;">Skills</span>
+      <div class="exp-tags">
+        <span class="tag">Content creation</span>
+        <span class="tag">Video &amp; graphics</span>
+        <span class="tag">Writing</span>
+        <span class="tag">Market &amp; competitor research</span>
+        <span class="tag">Campaign planning</span>
+        <span class="tag">Event execution</span>
+        <span class="tag">Team leadership</span>
+        <span class="tag">Korean–English bilingual</span>
+        <span class="tag">Figma</span>
+        <span class="tag">Spreadsheets &amp; data</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact section-pad" id="contact">
+  <div class="container">
+    <p class="eyebrow"><span class="dash" style="color:var(--blue)">—</span> Let&rsquo;s talk <span class="sep">/</span> Open to internships &amp; collaboration</p>
+    <h2 class="display contact-display">Say hello —<br /><a href="mailto:wxk5145@psu.edu">wxk5145@psu.edu</a></h2>
+
+    <!-- PLACEHOLDERS: paste each real URL into the href. Labels stay as-is. -->
+    <div class="links-grid">
+      <a class="link-btn" href="https://ic-website-ecru.vercel.app/#join" target="_blank" rel="noopener">
+        <span class="lb-name">IC Studio
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+        </span>
+        <span class="lb-hint">Creative studio</span>
+      </a>
+      <a class="link-btn" href="https://www.instagram.com/7_24ui/" target="_blank" rel="noopener">
+        <span class="lb-name">Instagram
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+        </span>
+        <span class="lb-hint">@7_24ui</span>
+      </a>
+      <a class="link-btn" href="#resumeModal" id="resumeContactBtn">
+        <span class="lb-name">Résumé
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+        </span>
+        <span class="lb-hint">View PDF</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2026 Wonui Kim</span>
+    <span>State College, PA · <a href="mailto:wxk5145@psu.edu">wxk5145@psu.edu</a></span>
+  </div>
+</footer>
+
+<!-- ===================== RESUME MODAL ===================== -->
+<div class="resume-modal" id="resumeModal">
+  <div class="modal-overlay" id="modalOverlay"></div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Résumé</h3>
+      <button class="modal-close" id="modalClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <iframe id="resumeFrame" title="Wonui Kim Resume"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Load resources from bundler
+  if (window.__resources) {
+    document.getElementById('icLogoImg').src = window.__resources.icLogo;
+    document.getElementById('spoanyCardImg').src = window.__resources.spoanyCard;
+    document.getElementById('keyglIconImg').src = window.__resources.keyglIcon;
+    document.getElementById('rokSealImg').src = window.__resources.rokSeal;
+    document.getElementById('resumeFrame').src = window.__resources.resumePdf;
+  }
+</script>
+
+<script id="imageslot-inline">
+// image-slot.js inlined
+(function() {
+  const tmpl = document.createElement('template');
+  tmpl.innerHTML = '<input type="file" accept="image/*" style="display:none"><img style="object-fit:cover;width:100%;height:100%;display:block"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:.4"><path d="M21 15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><circle cx="10.5" cy="8.5" r="1.5"/><path d="m21 15-5.197-5.197a1 1 0 0 0-1.414 0L7 15"/></svg>';
+  customElements.define('image-slot', class extends HTMLElement {
+    connectedCallback() {
+      const id = this.id, shape = this.getAttribute('shape') || 'rect', radius = this.getAttribute('radius') || '0', placeholder = this.getAttribute('placeholder') || 'Drop image';
+      const root = this.attachShadow({ mode: 'open' });
+      root.appendChild(tmpl.content.cloneNode(true));
+      const style = document.createElement('style');
+      style.textContent = `
+        :host { display: inline-flex; cursor: pointer; position: relative; background: #f5f5f4; }
+        input { display: none; }
+        img { cursor: pointer; }
+        svg { pointer-events: none; }
+        ${shape === 'rounded' ? `img, :host { border-radius: ${radius}px; }` : ''}
+        ${shape === 'circle' ? `img, :host { border-radius: 50%; aspect-ratio: 1; }` : ''}
+        ${shape === 'pill' ? `img, :host { border-radius: 9999px; aspect-ratio: 1; }` : ''}
+      `;
+      root.appendChild(style);
+      const img = root.querySelector('img'), input = root.querySelector('input'), slot = this;
+      let stored;
+      try { stored = localStorage.getItem(`image-slot-${id}`); } catch(e) {}
+      if (stored) img.src = stored;
+      else img.style.display = 'none', root.querySelector('svg').style.display = 'block';
+      img.addEventListener('click', () => input.click());
+      root.querySelector('svg').addEventListener('click', () => input.click());
+      input.addEventListener('change', e => {
+        const file = e.target.files?.[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = e => {
+            const data = e.target.result;
+            img.src = data;
+            img.style.display = 'block';
+            root.querySelector('svg').style.display = 'none';
+            try { localStorage.setItem(`image-slot-${id}`, data); } catch(x) {}
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    }
+  });
+})();
+</script>
+
+<script>
+  // mobile nav toggle
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  // resume modal - both nav and contact buttons
+  const resumeBtn = document.getElementById('resumeBtn');
+  const resumeContactBtn = document.getElementById('resumeContactBtn');
+  const resumeModal = document.getElementById('resumeModal');
+  const modalClose = document.getElementById('modalClose');
+  const modalOverlay = document.getElementById('modalOverlay');
+
+  const openModal = (e) => {
+    e.preventDefault();
+    resumeModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  resumeBtn.addEventListener('click', openModal);
+  if (resumeContactBtn) resumeContactBtn.addEventListener('click', openModal);
+
+  const closeModal = () => {
+    resumeModal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', closeModal);
+
+  // ESC key to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && resumeModal.classList.contains('open')) {
+      closeModal();
+    }
+  });
+</script>
+</body>
+</html>
