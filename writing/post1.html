@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>I Built a Full App Alone — Here's What I Actually Learned — Wonui Kim</title>
+<meta name="description" content="Building KeyGlo from scratch taught me more about product and shipping than any course." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../index.html">
+      <span class="mark">WK</span>
+      Wonui Kim
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#what">What I Do</a></li>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#writing">Writing</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-dark" href="../index.html#resumeModal" id="resumeBtn">Résumé
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== ARTICLE ===================== -->
+<article class="article">
+  <div class="article-wrap">
+    <a href="../index.html#writing" class="back-link">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 19l-7-7 7-7"/></svg>
+      Back to writing
+    </a>
+
+    <h1>I Built a Full App Alone — Here's What I Actually Learned</h1>
+    
+    <div class="a-meta">
+      <span>App Development</span>
+      <span class="sep">/</span>
+      <span>Jan 2025</span>
+    </div>
+
+    <p class="a-lede">Building <span class="blue">KeyGlo</span> alone taught me that one person can take charge of the entire product — PM, design, and development. This is what I learned.</p>
+
+    <div class="article-body">
+      <h2>Problems that translation apps have not solved</h2>
+      <p>I came to the U.S. from Korea when I was 17. I had been an athlete my whole life, so it was my first time seriously studying.</p>
+      <p>I caught up quickly. I learned English and kept up with classes. But there was one problem that remained: writing. Writing in English was not impossible. It was just that when I write, I always think in Korean first.</p>
+      <p>No matter what translator I used, the result was always stiff and awkward. My tone and nuance never came through. Anyone who has lived between two languages would sympathize.</p>
+      <p>Currently, <a href="https://brightlinestranslation.com/translation-statistics-2025-key-languages-online-trends/" target="_blank" rel="noopener">only about 25% of the world's internet users are native English speakers. The remaining 75% use tools still designed around native English speakers.</a> This disconnect was exactly what I felt every day.</p>
+      <p>So I made KeyGlo. It's an iOS keyboard that turns my Korean typing into English in my own voice.</p>
+
+      <h2>The reality of making it by yourself</h2>
+      <p>I am an economics major. I learned coding by myself. No co-founders, no bootcamp — just me doing PM, design, and development alone.</p>
+      <p>It was a lot harder than I expected. Korean consonants typed back-to-back weren't being recognized. Inside keyboard extensions, backspace worked differently than in normal apps. Profanity filtering took a lot longer than I thought.</p>
+      <p>At first, I used the Claude API. The quality was good, but the cost was the issue. After testing several alternatives, I switched to Gemini 2.5 Flash. The cost was about 10 times cheaper, and the translation performance was similar. The choice was not difficult.</p>
+      <p>Every technical decision had to be mine. Every design choice had to be mine. Every decision about what to build and what to skip had to be mine. That's isolating, but it's also clarifying.</p>
+
+      <h2>What I really learned</h2>
+      <p>I didn't make it to make money. I made it because I needed it and no one else had made it.</p>
+      <p>The biggest thing I learned was not technology. One person can take charge of the entire product. One person can do PM, design, and development on their own. That's not something you learn in a classroom. You have to launch it yourself to find out.</p>
+
+      <div style="margin: 40px 0; text-align: center;">
+        <img src="keyglo-screenshot.jpg" alt="KeyGlo App Screenshot" style="max-width: 100%; height: auto; border-radius: 16px;" />
+        <p style="margin-top: 12px; font-size: 13px; color: #999;">KeyGlo — Korean-English Translation Keyboard</p>
+      </div>
+      <p>Most importantly, I learned that you don't need permission to build something. You don't need a team, a co-founder, or a degree in computer science. You just need a problem you care about solving and the willingness to spend the time figuring it out.</p>
+    </div>
+
+    <div class="article-foot">
+      <span class="byline">Wonui Kim · Jan 2025</span>
+    </div>
+  </div>
+</article>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2026 Wonui Kim</span>
+    <span>State College, PA · <a href="mailto:wxk5145@psu.edu">wxk5145@psu.edu</a></span>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What Gyms Taught Me About Keeping Customers — Wonui Kim</title>
+<meta name="description" content="Acquisition gets attention, but retention pays the bills. Here's what SpoAny taught me." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../index.html">
+      <span class="mark">WK</span>
+      Wonui Kim
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#what">What I Do</a></li>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#writing">Writing</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-dark" href="../index.html#resumeModal" id="resumeBtn">Résumé
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M17 7H8M17 7v9"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== ARTICLE ===================== -->
+<article class="article">
+  <div class="article-wrap">
+    <a href="../index.html#writing" class="back-link">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 19l-7-7 7-7"/></svg>
+      Back to writing
+    </a>
+
+    <h1>I Went Undercover at a Gym Chain. Here's What the Data Missed.</h1>
+    
+    <div class="a-meta">
+      <span>Market Research</span>
+      <span class="sep">/</span>
+      <span>Feb 2025</span>
+    </div>
+
+    <p class="a-lede"><span class="blue">Statistics tell you what's happening, but not why.</span> Here's what I learned going undercover at SpoAny.</p>
+
+    <div class="article-body">
+      <h2>The reason I went undercover</h2>
+      <p>In the summer of 2025, I got the opportunity to work at SpoAny as part of a three-month project. SpoAny is a large fitness chain in South Korea with over 100 locations in Seoul alone.</p>
+      <p>My role wasn't just to be an office worker. I visited both high and low-revenue branches to find out what was different, how they were operating, and what problems HQ didn't know about. It was a complete secret that I was dispatched from HQ. While working as an actual trainer, I submitted reports to HQ every week.</p>
+      <p>Researching competitors was also part of my job. I went to other gyms pretending to be a regular customer, got consultations, and tried personal training sessions. I even counted the number of visitors during evening hours. It was necessary to find out why a particular branch was doing well and why it wasn't doing well.</p>
+
+      <h2>What the data didn't show</h2>
+      <p>The fitness industry's retention figures are already clear. <a href="https://www.glofox.com/blog/gym-membership-statistics/" target="_blank" rel="noopener">Roughly one-third of gym members leave each year, and half of new members quit within six months of signing up.</a> HQ was aware of these numbers too.</p>
+      <p>But what I felt while working as a trainer myself was different. There were things that didn't appear in the data. The real reasons why members were leaving, the atmosphere between trainers and members, and the detailed realities of branch management were nowhere in the reports. That's when I first learned that working as a trainer was much more difficult than I thought.</p>
+
+      <h2>You can't see culture in a spreadsheet</h2>
+      <p>The numbers said one branch was underperforming. But when I worked there, I understood why. There were things that didn't appear in the data. The real reasons why members were leaving, the atmosphere between trainers and members, and the detailed realities of branch management were nowhere in the reports.</p>
+      <p>You can't measure that in a spreadsheet. You have to be there and do the work yourself to understand what's really happening.</p>
+
+      <h2>Data is a starting point, not an answer</h2>
+      <p>HQ looked at churn rates and saw a problem. But the data couldn't tell them *where* the problem was or *why* it existed. That required being on the ground, talking to people, and actually doing the work.</p>
+      <p>I counted evening visitors at competitor gyms. I listened to what members complained about during consultations. I felt the difference between a well-run branch and a badly-run one.</p>
+      <p>None of that would have shown up in a quarterly report.</p>
+
+      <h2>The one thing this taught me</h2>
+      <p>Statistics tell you what's happening, but not why. I've stopped blindly trusting data since that day. There are things you can only see by going there and doing the work yourself.</p>
+      <p>If you want to understand a business, don't just read the reports. Work there. Talk to the people. Feel the culture. That's where the real insight lives.</p>
+
+      <div style="margin: 40px 0; text-align: center;">
+        <img src="spoany-credential.jpeg" alt="SpoAny Trainer Credential" style="max-width: 100%; height: auto; border-radius: 8px; transform: rotate(90deg);" />
+        <p style="margin-top: 12px; font-size: 13px; color: #999;">SpoAny Overseas Manager Credential</p>
+      </div>
+    </div>
+
+    <div class="article-foot">
+      <span class="byline">Wonui Kim · Feb 2025</span>
+    </div>
+  </div>
+</article>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2026 Wonui Kim</span>
+    <span>State College, PA · <a href="mailto:wxk5145@psu.edu">wxk5145@psu.edu</a></span>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>
